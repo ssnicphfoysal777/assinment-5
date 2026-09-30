@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "React",
+    "badge": "Popular",
+    "description": "A declarative component-based JavaScript library for building modern user interfaces.",
+    "type": "Frontend",
+    "level": "Beginner-Friendly",
+    "rating": 4.9,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  {
+    "id": 2,
+    "name": "Vue.js",
+    "badge": "Versatile",
+    "description": "An approachable, performant, and versatile framework for building web user interfaces.",
+    "type": "Frontend",
+    "level": "Beginner-Friendly",
+    "rating": 4.8,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg"
+  },
+  {
+    "id": 3,
+    "name": "Svelte",
+    "badge": "Fast",
+    "description": "A component-based compiler that helps you build fast and reactive web applications.",
+    "type": "Frontend",
+    "level": "Intermediate",
+    "rating": 4.8,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/svelte/svelte-original.svg"
+  },
+  {
+    "id": 4,
+    "name": "Next.js",
+    "badge": "Popular",
+    "description": "The React framework for production-ready web applications with hybrid static and server rendering.",
+    "type": "Frontend",
+    "level": "Intermediate",
+    "rating": 4.7,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+  },
+  {
+    "id": 5,
+    "name": "Node.js",
+    "badge": "Standard",
+    "description": "An asynchronous event-driven JavaScript runtime built on Chrome's V8 engine.",
+    "type": "Backend",
+    "level": "Intermediate",
+    "rating": 4.8,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+  },
+  {
+    "id": 6,
+    "name": "PostgreSQL",
+    "badge": "Top SQL",
+    "description": "A powerful, open-source object-relational database system with proven reliability.",
+    "type": "Database",
+    "level": "Intermediate",
+    "rating": 4.9,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+  },
+  {
+    "id": 7,
+    "name": "Redis",
+    "badge": "Cache",
+    "description": "An in-memory data store used for caching, high-speed database access, and message queues.",
+    "type": "Database",
+    "level": "Intermediate",
+    "rating": 4.8,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+  },
+  {
+    "id": 8,
+    "name": "JavaScript",
+    "badge": "Ubiquitous",
+    "description": "A dynamic programming language used to create interactive and powerful web applications.",
+    "type": "Language",
+    "level": "Beginner-Friendly",
+    "rating": 4.9,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+  },
+  {
+    "id": 9,
+    "name": "TypeScript",
+    "badge": "Loved",
+    "description": "A strongly typed programming language that builds on JavaScript for robust tooling.",
+    "type": "Language",
+    "level": "Intermediate",
+    "rating": 4.9,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+  },
+  {
+    "id": 10,
+    "name": "Java",
+    "badge": "Robust",
+    "description": "A secure, object-oriented programming language designed for portability and scale.",
+    "type": "Language",
+    "level": "Intermediate",
+    "rating": 4.6,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+  },
+  {
+    "id": 11,
+    "name": "Tailwind CSS",
+    "badge": "Modern",
+    "description": "A utility-first CSS framework packed with classes that can be composed to build custom UI.",
+    "type": "Styling",
+    "level": "Beginner-Friendly",
+    "rating": 4.9,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+  },
+  {
+    "id": 12,
+    "name": "Docker",
+    "badge": "Containers",
+    "description": "A platform designed to build, share, and run applications consistently across environments.",
+    "type": "DevOps",
+    "level": "Intermediate",
+    "rating": 4.9,
+    "image": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+  }
+]
