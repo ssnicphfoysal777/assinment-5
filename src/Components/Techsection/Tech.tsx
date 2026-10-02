@@ -17,10 +17,11 @@ const Tech = ({
     <div className="col-span-3">
 
       {/* Heading */}
-      <div className="text-center mb-6">
+      <div className="text-left mb-6">
 
-        <h1 className="text-3xl font-bold text-gray-900">
-          Explore the Technologies
+        <h1 className="text-3xl font-bold ">
+          Explore the<span className="bg-linear-to-r from-Tc-2 to-Tc-1 bg-clip-text text-transparent"> Technologies
+            </span>
         </h1>
 
         <p className="text-[10px] text-gray-400 mt-1">

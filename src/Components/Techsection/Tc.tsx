@@ -9,18 +9,16 @@ const Tc = ({
   setSelectedTech: Dispatch<SetStateAction<Technology[]>>;
 }) => {
 
-  const badgeColor =
-    technology.badge === "Popular"
-      ? "bg-blue-50 text-blue-500"
-      : technology.badge === "Fast"
-        ? "bg-orange-50 text-orange-500"
-        : technology.badge === "Cache"
-          ? "bg-red-50 text-red-500"
-          : technology.badge === "Top SQL"
-            ? "bg-blue-50 text-blue-600"
-            : technology.badge === "Ubiquitous"
-              ? "bg-yellow-50 text-yellow-600"
-              : "bg-green-50 text-green-600";
+ const badgeColors: { [key: string]: string } = {
+  Popular: "bg-blue-50 text-blue-500",
+  Fast: "bg-orange-50 text-orange-500",
+  Cache: "bg-red-50 text-red-500",
+  "Top SQL": "bg-blue-50 text-blue-600",
+  Ubiquitous: "bg-yellow-50 text-yellow-600",
+};
+
+const badgeColor =
+  badgeColors[technology.badge] || "bg-green-50 text-green-600";
 
   return (
     <div className="border border-gray-200 rounded-xl p-2 bg-white">
@@ -48,7 +46,7 @@ const Tc = ({
       </h3>
 
       {/* Description */}
-      <p className="text-[8px] text-gray-500 leading-3 mt-2 min-h-[36px]">
+      <p className="text-[8px] text-gray-500 leading-3 mt-2 min-h-9">
         {technology.description}
       </p>
 

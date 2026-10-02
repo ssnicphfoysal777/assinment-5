@@ -42,9 +42,6 @@ const Footer = () => {
           </div>
 
 
-        
-
-
 
           <div>
 
@@ -71,9 +68,6 @@ const Footer = () => {
           </div>
 
 
-
-
-
           <div>
 
             <h3 className="text-[10px] font-bold text-gray-800">
@@ -97,10 +91,6 @@ const Footer = () => {
             </div>
 
           </div>
-
-
-        
-
 
           <div>
 

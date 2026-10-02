@@ -10,7 +10,7 @@ const Stack = ({
   setSelectedTech: Dispatch<SetStateAction<Technology[]>>;
 }) => {
   return (
-    <div className="border border-gray-200 rounded-xl p-3 h-fit mt-[76px]">
+    <div className="border border-gray-200 rounded-xl p-3 h-fit mt-19">
 
       <h2 className="text-[12px] font-semibold">
         Your Stack

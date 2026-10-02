@@ -12,9 +12,6 @@ const Herosectio = () => {
                 </h1>
 
 
-
-
-
                 <p>Explore frontend, backend, database, and tooling options,
                     compare them side by side, and put together the stack that fits your
                     next project.</p>
