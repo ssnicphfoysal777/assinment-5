@@ -1,11 +1,14 @@
-import { use } from "react";
+
+import { use, type Dispatch, type SetStateAction,  } from "react";
 import type { Technology } from "../Typs/Technologies";
 import Tc from "./Tc";
 
 const Tech = ({
   TechPromise,
+  setSelectedTech,
 }: {
   TechPromise: Promise<Technology[]>;
+  setSelectedTech: Dispatch<SetStateAction<Technology[]>>;
 }) => {
 
   const allTech = use(TechPromise);
@@ -31,9 +34,10 @@ const Tech = ({
 
         {allTech.map((technology) => (
           <Tc
-            key={technology.id}
-            technology={technology}
-          />
+  key={technology.id}
+  technology={technology}
+  setSelectedTech={setSelectedTech}
+/>
         ))}
 
       </div>

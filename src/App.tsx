@@ -1,10 +1,11 @@
 
 // import Footer from "./Components/Footer"
-import { Suspense } from "react"
+import { Suspense, useState } from "react";
 import Herosectio from "./Components/Herosectio"
 import Navbar from "./Components/Navbar"
 import Tech from "./Components/Techsection/Tech"
 import Stack from "./Components/Techsection/Stack";
+import type { Technology } from "./Components/Typs/Technologies";
 
 const fetchtech = async () => {
   const res = await fetch('/Tec.json')
@@ -14,7 +15,9 @@ const fetchtech = async () => {
 
 const TechPromise = fetchtech()
 
+
 const App = () => {
+  const [selectedTech, setSelectedTech] = useState<Technology[]>([]);
   return (
     <div>
 
@@ -30,11 +33,17 @@ const App = () => {
 
             {/* Tech compionents */}
             <Suspense fallback={<div>Loading..</div>}>
-              <Tech TechPromise={TechPromise} />
+              <Tech
+                TechPromise={TechPromise}
+                setSelectedTech={setSelectedTech}
+              />
             </Suspense>
 
             {/*Stuch compionents */}
-             <Stack />
+            <Stack
+              selectedTech={selectedTech}
+              setSelectedTech={setSelectedTech}
+            />
 
           </div>
 

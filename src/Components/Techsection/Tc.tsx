@@ -1,19 +1,26 @@
+import type { Dispatch, SetStateAction } from "react";
 import type { Technology } from "../Typs/Technologies";
 
-const Tc = ({ technology }: { technology: Technology }) => {
+const Tc = ({
+  technology,
+  setSelectedTech,
+}: {
+  technology: Technology;
+  setSelectedTech: Dispatch<SetStateAction<Technology[]>>;
+}) => {
 
   const badgeColor =
     technology.badge === "Popular"
       ? "bg-blue-50 text-blue-500"
       : technology.badge === "Fast"
-      ? "bg-orange-50 text-orange-500"
-      : technology.badge === "Cache"
-      ? "bg-red-50 text-red-500"
-      : technology.badge === "Top SQL"
-      ? "bg-blue-50 text-blue-600"
-      : technology.badge === "Ubiquitous"
-      ? "bg-yellow-50 text-yellow-600"
-      : "bg-green-50 text-green-600";
+        ? "bg-orange-50 text-orange-500"
+        : technology.badge === "Cache"
+          ? "bg-red-50 text-red-500"
+          : technology.badge === "Top SQL"
+            ? "bg-blue-50 text-blue-600"
+            : technology.badge === "Ubiquitous"
+              ? "bg-yellow-50 text-yellow-600"
+              : "bg-green-50 text-green-600";
 
   return (
     <div className="border border-gray-200 rounded-xl p-2 bg-white">
@@ -63,7 +70,10 @@ const Tc = ({ technology }: { technology: Technology }) => {
       </div>
 
       {/* Button */}
-      <button className="w-full bg-gray-950 text-white text-[8px] py-2 rounded-md mt-3">
+      <button
+        onClick={() => setSelectedTech((prev) => [...prev, technology])}
+        className="w-full bg-gray-950 text-white text-[8px] py-2 rounded-md mt-3"
+      >
         Add to Stack
       </button>
 
