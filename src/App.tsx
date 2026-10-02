@@ -6,6 +6,7 @@ import Navbar from "./Components/Navbar"
 import Tech from "./Components/Techsection/Tech"
 import Stack from "./Components/Techsection/Stack";
 import type { Technology } from "./Components/Typs/Technologies";
+import Footer from "./Components/Footer";
 
 const fetchtech = async () => {
   const res = await fetch('/Tec.json')
@@ -54,7 +55,7 @@ const App = () => {
 
 
 
-      <Footer></Footer>
+      <Footer/>
 
     </div>
   )
